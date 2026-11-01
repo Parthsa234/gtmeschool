@@ -114,7 +114,8 @@ button{font:inherit;color:inherit}
 .mnav a.l span{font-family:var(--sub);font-size:14px;font-weight:500;color:var(--ember)}
 .mnav .close{width:44px;height:44px;border:1px solid var(--line);background:var(--paper);border-radius:var(--r);font-size:22px;cursor:pointer}
 .mnav .btn{margin-top:14px}
-@media (max-width:1080px){.nav,.hdr .cta{display:none}.burger{display:flex}}
+@media (max-width:1080px){.nav{display:none}.hdr .cta{margin-left:auto}.burger{display:flex;margin-left:0}}
+@media (max-width:420px){.hdr .wrap{gap:10px}.hdr .cta .btn{padding:0 12px}.hdr .cta .arr{display:none}.brand{font-size:17px}}
 
 /* ---------- period strip (section index) ---------- */
 .periods{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--head));z-index:40;background:var(--paper);border-bottom:1px solid var(--line)}
@@ -810,3 +811,14 @@ h1,h2,h3,h4{line-height:1.15}
 @media (max-width:700px){.rungs.two{grid-template-columns:1fr}}
 .ticks li{display:block;position:relative;padding-left:30px}
 .ticks li::before{position:absolute;left:2px;top:0}
+
+/* v4 — unified Apply Now CTAs */
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:2px solid var(--flame);outline-offset:3px}
+.sec-cta{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:clamp(28px,3vw,40px);padding-top:24px;border-top:1px solid var(--line)}
+.sec-cta p{font-family:var(--sub);font-size:15px;color:var(--grey)}
+.on-dark .sec-cta{border-top-color:var(--night-line)}
+.on-dark .sec-cta p{color:var(--bone-2)}
+.final-cta{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:36px;border:1px solid var(--night-line);border-radius:12px;padding:clamp(22px,3vw,34px);background:var(--night-2)}
+.final-cta p{color:var(--bone-2);font-size:16px;max-width:56ch}
+.rc .hd:last-child{border-bottom:0;padding-bottom:16px}
