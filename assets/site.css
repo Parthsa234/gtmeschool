@@ -822,3 +822,13 @@ h1,h2,h3,h4{line-height:1.15}
 .final-cta{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:36px;border:1px solid var(--night-line);border-radius:12px;padding:clamp(22px,3vw,34px);background:var(--night-2)}
 .final-cta p{color:var(--bone-2);font-size:16px;max-width:56ch}
 .rc .hd:last-child{border-bottom:0;padding-bottom:16px}
+
+/* tier detail tables inside pricing cards */
+.ptbl{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:14px}
+.ptbl th,.ptbl td{padding:8px 0;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+.ptbl th{font-weight:400;color:var(--grey);padding-right:12px;width:46%}
+.ptbl td{font-family:var(--sub);font-weight:500;color:var(--ink)}
+.door-c.feat .ptbl th,.door-c.feat .ptbl td{border-bottom-color:var(--night-line)}
+.door-c.feat .ptbl th{color:var(--ash)}
+.door-c.feat .ptbl td{color:var(--bone)}
+.door-c .ptbl+ul{margin-top:14px}
