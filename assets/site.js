@@ -147,15 +147,6 @@
     $$('.screen video').forEach(function(o){if(o!==v)o.pause()});
   })});
 
-  /* countdowns */
-  $$('[data-deadline]').forEach(function(el){
-    var t=new Date(el.getAttribute('data-deadline')).getTime(), now=Date.now();
-    var days=Math.ceil((t-now)/864e5);
-    var mode=el.getAttribute('data-mode')||'days';
-    if(days<0){el.textContent=el.getAttribute('data-past')||'Closed';return}
-    if(mode==='num'){el.textContent=days}
-    else el.textContent=days===1?'1 day left':days+' days left';
-  });
 
   /* launchpad clinic checklist */
   var cl=$('.clinics');
