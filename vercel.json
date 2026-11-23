@@ -1,1 +1,12 @@
-{"cleanUrls": false}
+{
+  "cleanUrls": false,
+  "rewrites": [
+    { "source": "/vsl", "destination": "https://gtme-individual.vercel.app/vsl" },
+    { "source": "/apply/:path*", "destination": "https://gtme-individual.vercel.app/apply/:path*" },
+    { "source": "/api/:path*", "destination": "https://gtme-individual.vercel.app/api/:path*" },
+    { "source": "/assets/:path*", "destination": "https://gtme-individual.vercel.app/assets/:path*" }
+  ],
+  "redirects": [
+    { "source": "/corporate-vsl", "destination": "/", "permanent": false }
+  ]
+}
